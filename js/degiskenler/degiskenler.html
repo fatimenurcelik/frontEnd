@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var name="fatime";
+        var surname="celik";
+        var tcno="12334566987";
+        var sum =205.6;
+        var cinsiyet="kadın";
+        //object
+        var adres={
+            city: "ısparta",
+            body: "lksvlvkl kana jdchu"
+        }
+        //array
+        var hobiler = ["sinema", "kitap", "spor"];
+
+        var order1=Number('100');
+        var order2=Number('150');
+        var totalOrder = order1 + order2;
+        console.log(totalOrder);
+
+        console.log(new Date().getFullYear()-1999);
+        
+        console.log("****************************");
+
+        const boyAkisi = 1.82; 
+        const kiloAkisi = 70;
+        const boyBkisi = 1.68;
+        const kiloBkisi =59;
+
+        function indeks(boy, kilo) {
+            var result = kilo/ Math.pow(boy, 2);
+            return result;
+        }
+        var indeksAkisi= indeks(boyAkisi,kiloAkisi);
+        var indeksBkisi=indeks(boyBkisi,kiloBkisi);
+        console.log( indeks(boyAkisi,kiloAkisi));
+        console.log(indeks(boyBkisi,kiloBkisi));
+        if (indeksAkisi < 18.4) {
+            console.log("çok zayıf ");
+        }else if(indeksAkisi <24.9){
+            console.log("normal");
+        }else if(indeksAkisi < 29.9){
+            console.log("fazla kiloluu");
+        }else if(indeksAkisi < 34.9){
+            console.log("obez ");
+        }
+        if (indeksBkisi < 18.4) {
+            console.log("çok zayıf ");
+        }else if(indeksBkisi <24.9){
+            console.log("normal");
+        }else if(indeksBkisi < 29.9){
+            console.log("fazla kiloluu");
+        }else if(indeksBkisi < 34.9){
+            console.log("obez  ");
+        }
+        console.log("**************************");
+
+        var date = new Date();
+        console.log(date);
+        console.log(date.getDate(),date.getMonth()+1,date.getFullYear(),"/",date.getHours(),date.getMinutes());
+
+        var dateSpecific = new Date("2016-01-22 15:28:22");
+        console.log(dateSpecific);
+
+        var dt= new Date("1/1/1990");
+        var dayOfMonth = dt.getDate();
+        //console.log(dayOfMonth);  ->1
+        dt.setDate(dayOfMonth-1);
+        console.log(dt);
+
+        console.log("******************************");
+
+        var sentence =" Template Literals or template strings is the ability Have multi-line strings without any funny business. " 
+        var url= "http://sadikturan.com/Modern Javascript KURSU sıfırdan ileriye";
+
+        console.log(sentence.length);
+        var arr = sentence.trim().split(" ");
+        console.log(arr.length);
+
+        console.log(sentence.toUpperCase());
+        console.log(sentence.toLowerCase());
+
+        console.log(sentence.replace("-"," "));
+
+        console.log("**********************************");
+
+        var arr = ["bmw", "mercedes", "opel" ,"mazda"]
+        console.log(arr.length);
+
+        //ilk eleman-son eleman
+        console.log(arr[0]);
+        console.log(arr[arr.length-1]);
+
+        arr[arr.length] = "renault";
+        arr[0]="toyota";
+        console.log(arr);
+        arr.shift("toyota")
+        arr.pop()
+        console.log(arr);
+
+    </script>
+</body>
+</html>
