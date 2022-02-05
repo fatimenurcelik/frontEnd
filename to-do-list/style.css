@@ -1,0 +1,23 @@
+#header{
+    font-size: 25px;
+}
+
+a{
+    color:white;
+}
+.delete-all{
+    float: right;
+}
+.delete-item{
+    float: right;
+}
+h1{
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 25px #7678ed ;
+    color: #6a4c93;
+}
+.list-group-item{
+    /* background-color: #cdcdcd; */
+    background-image: linear-gradient(45deg, #f2e7ff, #f5e0ed);
+    
+}
