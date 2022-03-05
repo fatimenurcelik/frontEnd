@@ -66,6 +66,7 @@ loadQuestion();
 function loadQuestion() {
     if(quiz.isFinish()){
         showScore();
+        process.style.display ='none'; //quiz in sonunda question 3 of 3 yazdırmamaya yarıyor. 
     }else{
         var question = quiz.getQuestion();
         var choices = question.choices;
