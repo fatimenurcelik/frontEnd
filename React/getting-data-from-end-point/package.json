@@ -1,0 +1,16 @@
+{
+  "name": "learning-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "fatime nur celik",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.2.4",
+    "slugify": "^1.6.5"
+  }
+}
