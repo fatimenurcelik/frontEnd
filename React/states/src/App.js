@@ -5,6 +5,7 @@ function App() {
   const [name, setName] = useState ("Mehmet");
   const [age, setAge] = useState (23);
   const [friends, setFriends] = useState (["Ali","Ahmet"]);
+  const [address, setAddress] = useState ({ title: "istanbul", zip: 34200});
 
   return (
   <div className="container">
@@ -25,6 +26,17 @@ function App() {
     ))}
     <button onClick={() => setFriends([... friends, "Ayse"])}>Add Friend</button>
 
+    <br></br> <br></br>
+    <hr></hr>
+
+    <h2>Adress</h2>
+    <div>
+      {address.title} {address.zip}
+      <br></br>
+      <button onClick={() => setAddress({...address , title:"Ankara" , zip:"06200"})}>Change The Adress</button>
+      {/*...address kullanılmadan zip verilmeseydi title ankara oluyor zip bilgisi verilmiyor ama 
+      bu durumda hiç bir bilgi vermesek bile default bilgiyi alıyor ne verilmişse onu değiştiriyor*/}
+    </div>
   </div>
 
   );
